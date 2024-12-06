@@ -1,8 +1,6 @@
 package com.challenge.domain.user;
 
-public enum Usertype {
+public enum UserType {
     COMMON,
-
     MERCHANT
-
 }
