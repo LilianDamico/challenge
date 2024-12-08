@@ -23,7 +23,7 @@ public class TransactionController {
     public ResponseEntity<Transaction> createTransaction(@RequestBody TransactionDTO transaction) throws Exception{
 
         Transaction newTransaction = this.transactionService.createTransaction(transaction);
-        return new ResponseEntity<>(newTransaction, HttpStatus.OK);
+        return new ResponseEntity<>(newTransaction, HttpStatus.CREATED);
 
     }
 
